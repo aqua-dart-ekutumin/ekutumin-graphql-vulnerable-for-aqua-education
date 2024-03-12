@@ -56,6 +56,7 @@ jobs:
             # --artifact-path "${{env.MY_APP_ROOT}}"
   aqua:
     name: Aqua scanner
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
